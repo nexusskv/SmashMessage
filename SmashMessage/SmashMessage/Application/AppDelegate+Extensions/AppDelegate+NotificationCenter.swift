@@ -11,7 +11,7 @@ import UIKit
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     
-    func requestNotificationAuthorization(_ sender: AnyObject) {
+    func requestNotificationAuthorization() {
         let authOptions = UNAuthorizationOptions.init(arrayLiteral: .alert, .badge, .sound)
         
         self.userNotificationCenter.requestAuthorization(options: authOptions) { (success, error) in
@@ -21,13 +21,13 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
                 DispatchQueue.main.async {
                     UNUserNotificationCenter.current().delegate = self
                     
-                    self.sendNotification(sender)
+                    self.sendNotification()
                 }
             }
         }
     }
     
-    func sendNotification(_ sender: AnyObject) {
+    func sendNotification() {
         let notificationContent                 = UNMutableNotificationContent()
         notificationContent.title               = "Solitaire smash"
         notificationContent.body                = "Play again to smash your top score"
@@ -50,7 +50,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
             if let error = error {
                 print("Notification Error: ", error)
             } else {
-                print("\n Notification call triggered")
+                print("\n Notification triggered")
             }
         }
     }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		11A5B89D28308CDD007A1020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B89C28308CDD007A1020 /* AppDelegate.swift */; };
 		11A5B89F28308CDD007A1020 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B89E28308CDD007A1020 /* SceneDelegate.swift */; };
-		11A5B8A128308CDD007A1020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B8A028308CDD007A1020 /* ViewController.swift */; };
+		11A5B8A128308CDD007A1020 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B8A028308CDD007A1020 /* WebViewController.swift */; };
 		11A5B8A428308CDD007A1020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A5B8A228308CDD007A1020 /* Main.storyboard */; };
 		11A5B8A628308CDE007A1020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A5B8A528308CDE007A1020 /* Assets.xcassets */; };
 		11A5B8A928308CDE007A1020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A5B8A728308CDE007A1020 /* LaunchScreen.storyboard */; };
@@ -19,6 +19,12 @@
 		11A5B8CF28308EA1007A1020 /* AppDelegate+NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B8CE28308EA1007A1020 /* AppDelegate+NotificationCenter.swift */; };
 		11A5B8D32830920F007A1020 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 11A5B8D12830920F007A1020 /* index.html */; };
 		11A5B8D42830920F007A1020 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 11A5B8D22830920F007A1020 /* styles.css */; };
+		11A5B8DB2830944E007A1020 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B8DA2830944E007A1020 /* WebViewModel.swift */; };
+		11A5B8DD28309466007A1020 /* WebActionsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B8DC28309466007A1020 /* WebActionsHandler.swift */; };
+		11A5B8E0283094B8007A1020 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A5B8DF283094B8007A1020 /* WebKit.framework */; };
+		11A5B8E3283098E0007A1020 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B8E2283098E0007A1020 /* Definitions.swift */; };
+		11A5B8E628309A39007A1020 /* WebViewController+NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B8E528309A39007A1020 /* WebViewController+NavigationDelegate.swift */; };
+		11A5B8E928309A4D007A1020 /* WebViewController+ScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B8E828309A4D007A1020 /* WebViewController+ScriptMessageHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +48,7 @@
 		11A5B89928308CDD007A1020 /* SmashMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmashMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A5B89C28308CDD007A1020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A5B89E28308CDD007A1020 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11A5B8A028308CDD007A1020 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11A5B8A028308CDD007A1020 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		11A5B8A328308CDD007A1020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11A5B8A528308CDE007A1020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11A5B8A828308CDE007A1020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +61,12 @@
 		11A5B8CE28308EA1007A1020 /* AppDelegate+NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+NotificationCenter.swift"; sourceTree = "<group>"; };
 		11A5B8D12830920F007A1020 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		11A5B8D22830920F007A1020 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		11A5B8DA2830944E007A1020 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		11A5B8DC28309466007A1020 /* WebActionsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebActionsHandler.swift; sourceTree = "<group>"; };
+		11A5B8DF283094B8007A1020 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		11A5B8E2283098E0007A1020 /* Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
+		11A5B8E528309A39007A1020 /* WebViewController+NavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebViewController+NavigationDelegate.swift"; sourceTree = "<group>"; };
+		11A5B8E828309A4D007A1020 /* WebViewController+ScriptMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebViewController+ScriptMessageHandler.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A5B8E0283094B8007A1020 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +102,7 @@
 				11A5B8B228308CDE007A1020 /* SmashMessageTests */,
 				11A5B8BC28308CDF007A1020 /* SmashMessageUITests */,
 				11A5B89A28308CDD007A1020 /* Products */,
+				11A5B8DE283094B8007A1020 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,8 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				11A5B8CC28308E63007A1020 /* Application */,
+				11A5B8D5283093B2007A1020 /* Main */,
+				11A5B8E1283098D0007A1020 /* Common */,
 				11A5B8D02830910C007A1020 /* Resources */,
-				11A5B8A028308CDD007A1020 /* ViewController.swift */,
 				11A5B8A228308CDD007A1020 /* Main.storyboard */,
 				11A5B8A528308CDE007A1020 /* Assets.xcassets */,
 				11A5B8A728308CDE007A1020 /* LaunchScreen.storyboard */,
@@ -158,6 +173,74 @@
 				11A5B8D22830920F007A1020 /* styles.css */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		11A5B8D5283093B2007A1020 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B8D6283093BF007A1020 /* WebViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		11A5B8D6283093BF007A1020 /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B8A028308CDD007A1020 /* WebViewController.swift */,
+				11A5B8D72830941C007A1020 /* WebViewController+Managers */,
+				11A5B8E428309A17007A1020 /* WebViewController+Extensions */,
+			);
+			path = WebViewController;
+			sourceTree = "<group>";
+		};
+		11A5B8D72830941C007A1020 /* WebViewController+Managers */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B8D82830942E007A1020 /* WebViewModel */,
+				11A5B8D928309436007A1020 /* WebActionsHandler */,
+			);
+			path = "WebViewController+Managers";
+			sourceTree = "<group>";
+		};
+		11A5B8D82830942E007A1020 /* WebViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B8DA2830944E007A1020 /* WebViewModel.swift */,
+			);
+			path = WebViewModel;
+			sourceTree = "<group>";
+		};
+		11A5B8D928309436007A1020 /* WebActionsHandler */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B8DC28309466007A1020 /* WebActionsHandler.swift */,
+			);
+			path = WebActionsHandler;
+			sourceTree = "<group>";
+		};
+		11A5B8DE283094B8007A1020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B8DF283094B8007A1020 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11A5B8E1283098D0007A1020 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B8E2283098E0007A1020 /* Definitions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		11A5B8E428309A17007A1020 /* WebViewController+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B8E528309A39007A1020 /* WebViewController+NavigationDelegate.swift */,
+				11A5B8E828309A4D007A1020 /* WebViewController+ScriptMessageHandler.swift */,
+			);
+			path = "WebViewController+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,10 +376,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A5B8A128308CDD007A1020 /* ViewController.swift in Sources */,
+				11A5B8E628309A39007A1020 /* WebViewController+NavigationDelegate.swift in Sources */,
+				11A5B8E3283098E0007A1020 /* Definitions.swift in Sources */,
+				11A5B8A128308CDD007A1020 /* WebViewController.swift in Sources */,
 				11A5B89D28308CDD007A1020 /* AppDelegate.swift in Sources */,
 				11A5B8CF28308EA1007A1020 /* AppDelegate+NotificationCenter.swift in Sources */,
+				11A5B8DB2830944E007A1020 /* WebViewModel.swift in Sources */,
 				11A5B89F28308CDD007A1020 /* SceneDelegate.swift in Sources */,
+				11A5B8E928309A4D007A1020 /* WebViewController+ScriptMessageHandler.swift in Sources */,
+				11A5B8DD28309466007A1020 /* WebActionsHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
