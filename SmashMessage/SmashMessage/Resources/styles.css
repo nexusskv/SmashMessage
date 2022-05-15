@@ -1,0 +1,20 @@
+body {
+    background-color: powderblue;
+}
+
+h2 {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+    text-align: center;
+}
+
+#messagetrigger {
+    color: white;
+    font-family: verdana;
+    font-size: 300%;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
